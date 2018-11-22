@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,10 @@
               해당 링크를 가져옴. 결국 bootstrap 를 쓴다고 보면 될 듯.  -->
 
     <!-- (2)  https://fontawesome.com/v4.7.0/  실제 이미지를 가져와서 사용할 싸이트 -->
-   
+
     <title>Find</title>
 </head>
+
 <body>
     <header>
 
@@ -23,7 +25,7 @@
                 <!-- Wifi Icon -->
             </div>
             <div class="header__column"></div>
-              <span class="header__time">18:38</span>
+            <span class="header__time">18:38</span>
             <div class="header__column">
                 <i class="fa fa-moon-o"></i>
                 <!-- moon icon -->
@@ -47,6 +49,41 @@
     </header>
     <!-- 카톡 페이지의 상단 -->
 
+    <main class="find">
+        <section class="find__options">
+            <div class="find__option">
+                <i class="fa fa-address-book fa-lg"></i>
+                <span class="find__option-title">Find</span>
+            </div>
+            <!-- 첫 번째 아이템 속성 정의 -->
+            <div class="find__option">
+                <i class="fa fa-qrcode fa-lg"></i>
+                <span class="find__option-title">QR Code</span>
+            </div>
+            <!-- 두 번째 아이템 속성 정의 -->
+            <div class="find__option">
+                <i class="fa fa-mobile fa-2x"></i>
+                <span class="find__option-title">Shake</span>
+            </div>
+            <!-- 세 번째 아이템 속성 정의 -->
+            <div class="find__option">
+                <i class="fa fa-envelope-o fa-lg"></i>
+                <span class="find__option-title">Invite via SMS</span>
+            </div>
+            <!-- 네 번째 아이템 속성 정의 -->
+        </section>
+
+        <section class="find_recommended">
+            <header>
+                <h6 class="recommended__title">Recommended Friends</h6>
+            </header>
+            <div class="recommended__none">
+                <span class="recommended__text">You have no recommended friends</span>
+            </div>
+        </section>
+        <!-- 추천 친구 목록 -->
+    </main>
+
     <nav class="tab_bar">
         <a href="index.html" class="tab-bar__tab ">
             <i class="fa fa-user"></i>
@@ -65,7 +102,8 @@
             </i><span class="tab-bar__title">More</span>
         </a>
     </nav>
-     <!-- 카톡 페이지의 하단 : Tab button  -->
+    <!-- 카톡 페이지의 하단 : Tab button  -->
 
 </body>
+
 </html>
