@@ -12,3 +12,48 @@
     justify-content: space-between;
 
 }
+
+.top-header .header__top{
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.top-header .header__bottom{
+    margin :0 10px;
+}
+
+.top-header .header__column{
+    width: 33%;
+}
+/*
+
+ ** 이 부분을 설정한 이유 : 최상단에 있는 3 부분의 div 에게 똑같은 width 값을 주기 위한 목적.
+                        --> 그래야, div01 의 "왼쪽", div02 의 "가운데", div03 의 "오른쪽" 정렬이 가능함. 
+                            자세한 부분은 아래 속성 지정한 부분을 통해 이해해 볼 것.
+
+*/
+.top-header .header__column:last-child{
+    /* background-color: blueviolet */
+    text-align: right;
+}
+/*
+
+1. 이 부분을 설정한 이유 : width 33% 로 했을 경우 제일 오른쪽 (마지막) 부분의 비율이 맞지 않아서.
+
+2. header__column:last-child 가 어떤 부분인지 궁금하면 위의 background:color 부분의 주석을 풀어서 확인 해 볼것. 
+
+*/
+.top-header .header__column:nth-child(2){
+    /* background-color: blueviolet */
+    text-align: center;
+}
+/*
+
+1. 이 부분을 설정한 이유 : 가운데 부분의 div 를 정렬하기 위한 목적 
+
+2. 해당 부분이 어떤 부분인지 궁금하면 위의 background:color 부분의 주석을 풀어서 확인 해 볼것. 
+
+*/
+.top-header .header__number{
+    color: yellow;
+}
