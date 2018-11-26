@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +24,7 @@
                 <!-- Wifi Icon -->
             </div>
             <div class="header__column"></div>
-              <span class="header__time">18:38</span>
+            <span class="header__time">18:38</span>
             <div class="header__column">
                 <i class="fa fa-moon-o"></i>
                 <!-- moon icon -->
@@ -45,7 +46,7 @@
         </div>
 
     </header>
-     <!-- 카톡 페이지의 상단 -->
+    <!-- 카톡 페이지의 상단 -->
 
     <main class="chats">
         <div class="search-bar">
@@ -54,30 +55,35 @@
         </div>
         <!-- 친구 찾는 검색 창 -->
         <ul class="chats__list">
+
             <li class="chats__chat">
-                <div class="chat__content">
-                    <img src="images/avatar.jpg">
-                    <div class="chat__preview">
-                        <h3 class="chat__user">Carrot</h3>
-                        <span class="chat__last-message">Hello! This is a test message!</span>
+                <a href="chat.html">
+                    <div class="chat__content">
+                        <img src="images/avatar.jpg">
+                        <div class="chat__preview">
+                            <h3 class="chat__user">Carrot</h3>
+                            <span class="chat__last-message">Hello! This is a test message!</span>
+                        </div>
                     </div>
-                </div>
-                <span class="chat__date-time">
-                    15:55
-                </span>
+                    <span class="chat__date-time">
+                        15:55
+                    </span>
+                </a>
             </li>
             <!-- 채팅방 목록에 있는 item01 속성 정의 -->
             <li class="chats__chat">
-                <div class="chat__content">
-                    <img src="images/avatar.jpg">
-                    <div class="chat__preview">
-                        <h3 class="chat__user">KakaoTalk</h3>
-                        <span class="chat__last-message">You logged into KakaoTalk PC</span>
+                <a href="chat.html">
+                    <div class="chat__content">
+                        <img src="images/avatar.jpg">
+                        <div class="chat__preview">
+                            <h3 class="chat__user">KakaoTalk</h3>
+                            <span class="chat__last-message">You logged into KakaoTalk PC</span>
+                        </div>
                     </div>
-                </div>
-                <span class="chat__date-time">
-                    Jul 29
-                </span>
+                    <span class="chat__date-time">
+                        Jul 29
+                    </span>
+                </a>
             </li>
             <!-- 채팅방 목록에 있는 item02 속성 정의 -->
         </ul>
@@ -88,15 +94,16 @@
         <!-- 채팅방 추가 버튼 -->
     </main>
     <!--
+        
         ** Main 화면 **
         
     1. Main Tag 는 한 개의 page 당 1개만 존재 가능
     
-    2. 
+    2. 구성 : 채팅방 목록에 있는 item 2 개 & 채팅방 추가 버튼 
 
     -->
     <nav class="tab_bar">
-         <a href="index.html" class="tab-bar__tab ">
+        <a href="index.html" class="tab-bar__tab ">
             <i class="fa fa-user"></i>
             <span class="tab-bar__title">Friends</span>
         </a>
@@ -116,4 +123,5 @@
     <!-- 카톡 페이지의 하단 : Tab button  -->
 
 </body>
+
 </html>
