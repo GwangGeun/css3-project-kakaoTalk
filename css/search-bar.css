@@ -1,0 +1,37 @@
+.search-bar{
+    padding: 10px 25px;
+    position: relative;
+}
+
+.search-bar input{
+    width: 100%;
+    padding: 5px 7px;
+    box-sizing: border-box;
+    /*   
+    
+       ** box-sizing 에 대한 참고주소 : https://opentutorials.org/course/2418/13405 ** 
+    
+       1. box-sizing 의 default 는 content-box (content 의 width & height 를 따른다는 의미)
+
+       2. box-sizing : border-box 의 경우 width & height 가 content가 아닌 box(border) 의
+                       크기로 지정된다는 것을 의미한다.
+
+    */
+    border : 0;
+    border-radius: 5px;
+    background-color: #f1f2f3;
+    font-size: 13px;
+    text-align: center;
+}
+
+.search-bar input:focus{
+    outline: 1px solid blue;
+    /* outline : none 하면 입력창 focus 시에 아무 테두리도 생기지 않음  */
+}
+
+.search-bar i {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    color: #bbbbbb;
+}

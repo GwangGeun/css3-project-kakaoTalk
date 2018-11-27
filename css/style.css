@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+/* google 에서 제공해주는 무료 font customize해서 가져오기 */
+
 @import 'reset.css';
 /* reset.css 는 규칙들의 모음 
 
@@ -6,5 +9,17 @@
 2. 모든 셋팅을 0 으로 만들어 준는 역할을 함.    
 
 */
+@import 'globals.css';
+/* 
+
+*** 위치 중요 ! ***
+
+why ? header 에도 적용하려면, 'header.css' 보다 앞에 와야된다.
+
+*/
 @import 'header.css';
-/*  */
+/* header 부분 */
+@import 'navigation.css';
+/* tab 에 해당하는 navigation 부분 */
+@import 'search-bar.css';
+/* 검색창에 해당하는 부분 */

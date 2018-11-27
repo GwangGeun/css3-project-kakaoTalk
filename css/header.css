@@ -3,6 +3,9 @@
     color : white;
     padding: 5px 10px 15px 10px;
     /* padding 순서 : 시계방향 */
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .top-header .header__top,
@@ -33,7 +36,7 @@
 
 */
 .top-header .header__column:last-child{
-    /* background-color: blueviolet */
+    /* background-color: blueviolet; */
     text-align: right;
 }
 /*

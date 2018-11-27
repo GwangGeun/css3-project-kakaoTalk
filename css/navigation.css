@@ -1,0 +1,52 @@
+.tab-bar{
+
+background-color: #f7f7f7;
+position: fixed;
+width: 100%;
+bottom: 0;
+display: flex;
+justify-content: space-between;
+border-top: 1px solid #C1C1C1;
+padding : 10px 30px 5px 30px;
+
+}
+
+.tab-bar .tab-bar__tab{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color : #C1C1C1;
+}
+
+.tab-bar .tab-bar__tab i{
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 24px; 
+    /* 아이콘의 (image)의 크기는 font-size 로 설정한다. */
+}
+/* 
+
+    아이콘들은 default로 폰트처럼 설정이 된다. 즉, inline 으로 보인다는 말임
+    이를 방지 하기 위해 block 으로 설정 
+
+    inline 이란 ?
+
+(1) block이 아님 : 따라서 모든 property 들을 무시함 ( 배경색, 높이, 넓이 기타...등등 )
+(2) 텍스트 처럼 적용이 된다. 따라서, 높이와 넓이 없음. 단지, 컨텐츠의 길이만 존재한다.
+(3) 텍스트가 없는 상태에서 설정하면, 모든게 사라짐.
+(4) 서로서로 좌,우로 붙어 있는 것 
+
+*/
+
+.tab-bar .tab-bar__title{
+    font-size: 10px;
+}
+/* tab 에 속해있는 글자들 크기 */
+
+.tab-bar .tab-bar__tab--selected{
+    color : #523737;
+}
+/* tab 중에 선택된 image 및 scan 은 색상을 다르게 처리해줘야 함. 
+   (선택되어 있는 상태라는 것을 표시하기 위한 목적) */
