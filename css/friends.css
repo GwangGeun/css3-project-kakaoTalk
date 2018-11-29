@@ -1,0 +1,55 @@
+
+/* 
+
+index.html 의 부분
+
+*/
+.friends__section .friends__section-header{
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding : 10px 15px;
+    font-size: 12px;
+    color : #b4b4b4;
+}
+
+.friends__section-rows .friends__section-row{
+    padding : 10px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+/* My profile 에 속해있는 리스트의 아이템들 속성지정 */
+
+.friends__section-row.with-tagline{
+    justify-content: space-between;
+}
+/* Friends 에 속해있는 리스트의 아이템 중, 상태메시지와 유저프로필(div)의 간격을 조절해주기 위한 목적 */
+
+.friends__section-tagline{
+    font-size: 10px;
+    background-color: #f0f0f0;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: #939393;
+}
+/* Friends 에 속해있는 리스트의 아이템 중, 상태메시지 부분 */
+
+.friends__section-row img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+/* My profile 에 속해있는 리스트의 아이템 중 이미지 부분*/
+
+.friends__section-row a{
+    text-decoration: none;
+    color: inherit;
+    /* 부모의 색상을 쓰겠다는 의미 : 물려받았다 */
+}
+/* My profile 에 속해있는 리스트의 아이템 중 링크 부분 */
+
+.friends__section-column{
+    display: flex;
+    align-items: center;
+}
+/*  Friends 에 속해있는 리스트의 아이템 중, 친구의 프로필 이미지 & 이름을 가운데 정렬 */

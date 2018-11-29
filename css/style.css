@@ -9,6 +9,7 @@
 2. 모든 셋팅을 0 으로 만들어 준는 역할을 함.    
 
 */
+
 @import 'globals.css';
 /* 
 
@@ -17,9 +18,12 @@
 why ? header 에도 적용하려면, 'header.css' 보다 앞에 와야된다.
 
 */
+
 @import 'header.css';
 /* header 부분 */
 @import 'navigation.css';
 /* tab 에 해당하는 navigation 부분 */
 @import 'search-bar.css';
 /* 검색창에 해당하는 부분 */
+
+@import 'friends.css';
