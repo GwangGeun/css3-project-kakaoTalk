@@ -1,0 +1,86 @@
+.chats .chats__list{
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+/* 채팅방 리스트 전체를 감싸고 있는 부분 */
+
+.chats__list .chats__chat{
+    padding: 15px;
+    border-bottom: 1px solid #ebebeb;
+}
+/* 채팅방 리스트 중 아이템 속성을 지정하는 부분 */
+
+.chats__list .chats__chat:last-child{
+    border: none;
+}
+/* 
+
+   채팅방 제일 아래 부분에 대해서는 border 지정을 해제 
+   why ? 제일 위의 두 부분에서 border 를 동시에 지정하고 있음. 때문에, 제일 아랫 부분은 border 가 2번 적용 됨
+         따라서, 1번만 적용하기 위한 목적.
+         
+*/
+
+.chat-btn{
+    width: 60px;
+    height: 60px;
+    background-color: #ffe94a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    font-size: 20px;
+    color: #523737;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    /* box-shadow 에 관한 설명 : https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+
+}
+
+.chats__chat .chat__content img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+/* 채팅방 리스트의 아이템 중 이미지 부분 */
+
+.chats__list .chats__chat a{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+}
+/* 채팅방 리스트의 아이템 전체를 감싸고 있는 a Tag 에 속성 지정 */
+
+.chats__chat .chat__content{
+    display: flex;
+    align-items: flex-start;
+}
+/* a Tag 에 속해 있는 부분임 : 프로필 이미지 & 채팅 미리보기 속성 지정 */
+
+/* 
+   align-items 은 기본적으로 stretch 임 즉, 이미지가 늘어날 수 밖에 없음
+   때문에, 추가적으로 이미지가 늘어나지 않기 위해 속성을 지정해줘야 한다.
+    
+   참고 주소 : https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+.chat__preview .chat__user{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+/* 채팅방 아이템에 속해 있는 사용자의 프로필 사진 */
+
+.chat__preview .chat__last-message{
+    color: #b4b4b4;
+    font-size: 11px;
+}
+/* 채팅방 아이템에 속해 있는 메세지 내용 */
+
+.chats__chat .chat__date-time{
+    font-size: 10px;
+    color: #b4b4b4;
+}
+/* 채팅방 아이템에 속해 있는 채팅 수신 날짜 */
