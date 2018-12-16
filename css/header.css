@@ -35,6 +35,12 @@
                             자세한 부분은 아래 속성 지정한 부분을 통해 이해해 볼 것.
 
 */
+
+.top-header .header__bottom .header__column:first-child{
+    color: rgba(255, 255, 255, 0.5);
+}
+/* find.html 기준으로 상단의 EDIT 에 해당하는 부분 */
+
 .top-header .header__column:last-child{
     /* background-color: blueviolet; */
     text-align: right;
