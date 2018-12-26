@@ -13,8 +13,8 @@
     <title>Chat</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header class="top-header">
+<body class="body-chat">
+    <header class="top-header chat-header">
 
         <div class="header__top">
             <div class="header__column">
@@ -59,42 +59,44 @@
         </div>
         <!-- 날짜 경계선  -->
         <div class="chat__message chat__message-from-me">
-            <span class="chat__meassage-time">17:55</span>
-            <span class="chat__meassage-body">Hello! This is a test message.</span>
+            <span class="chat__message-time">17:55</span>
+            <span class="chat__message-body">Hello! This is a test message.</span>
         </div>
         <!-- 첫 번째 채팅 message : 내가 보낸 message -->
         <div class="chat__message chat__message-to-me">
             <img src="images/avatar.jpg" class="chat__message-avatar">
             <div class="chat__message-center">
-                <h3 class="chat__message-uesrname">Carrot</h3>
-                <span class="chat__meassage-body">
+                <h3 class="chat__message-username">Carrot</h3>
+                <span class="chat__message-body">
                     And this is an answer
                 </span>
             </div>
-            <span class="chat__meassage-time">19:35</span>
+            <span class="chat__message-time">19:35</span>
         </div>
         <!-- 두 번째 채팅 message : 상대방이 보낸 message -->
-        <div class="type-message">
-            <i class="fa fa-plus fa-2x"></i>
-            <div class="type-message__input">
-                <input type="text">
-                <i class="fa fa-smile-o"></i>
-                <span class="record-message">
-                    <i class="fa fa-microphone"></i>
-                </span>
-            </div>
-        </div>
-        <!-- 채팅 입력창 -->
+       
     </main>
     <!--
         
-        ** Main 화면 **
+     ** Main 화면 **
         
-    1. Main Tag 는 한 개의 page 당 1개만 존재 가능
-    
-    2. 날짜 경계선 & 채팅 메시지 2개 & 채팅 입력창
+     Main Tag 는 한 개의 page 당 1개만 존재 가능
 
     -->
+    <div class="type-message">
+        <i class="fa fa-plus fa-lg"></i>
+        <div class="type-message__input">
+            <input type="text">
+            <i class="fa fa-smile-o fa-lg"></i>
+            <span class="record-message">
+                <i class="fa fa-microphone fa-lg"></i>
+            </span>
+        </div>
+    </div>
+    <!-- 채팅 입력창 -->
+    <div class="bigScreenText">
+        <span>Please make your screen smaller</span>
+    </div>
 </body>
 
 </html>

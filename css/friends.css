@@ -38,8 +38,22 @@ index.html 의 부분
     width: 40px;
     border-radius: 50%;
     margin-right: 15px;
+    animation: 1s rotateFriend infinite ease-in-out;
 }
 /* My profile 에 속해있는 리스트의 아이템 중 이미지 부분*/
+
+@keyframes rotateFriend{
+    0%{
+        transform: rotateY(0deg);
+    } 
+    50%{
+        transform: rotateY(180deg) scale(0.5);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
 
 .friends__section-row a{
     text-decoration: none;

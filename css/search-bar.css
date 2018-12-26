@@ -17,16 +17,19 @@
                        크기로 지정된다는 것을 의미한다.
 
     */
-    border : 0;
+    border: 0;
+    border : 1px solid transparent;
     border-radius: 5px;
     background-color: #f1f2f3;
     font-size: 13px;
     text-align: center;
+    transition: border-color .2s linear;
 }
 
 .search-bar input:focus{
-    outline: 1px solid blue;
+    outline: none;
     /* outline : none 하면 입력창 focus 시에 아무 테두리도 생기지 않음  */
+    border-color: #ffe94a;
 }
 
 .search-bar i {

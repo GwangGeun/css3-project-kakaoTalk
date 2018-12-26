@@ -33,3 +33,9 @@ why ? header 에도 적용하려면, 'header.css' 보다 앞에 와야된다.
 /* find.html 에 해당하는 부분 */
 @import 'more.css';
 /* more.html 에 해당하는 부분 */
+@import 'profile.css';
+/* profile.html 에 해당하는 부분 */
+@import 'chat.css';
+/* chat.html 에 해당하는 부분 */
+@import 'bigScreen.css';
+@import 'mobile.css';

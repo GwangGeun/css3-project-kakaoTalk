@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,13 @@
               해당 링크를 가져옴. 결국 bootstrap 를 쓴다고 보면 될 듯.  -->
 
     <!-- (2)  https://fontawesome.com/v4.7.0/  실제 이미지를 가져와서 사용할 싸이트 -->
-   
+
     <title>Profile</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="top-header">
+    <header class="top-header top-header--transparent">
 
         <div class="header__top">
             <div class="header__column">
@@ -24,7 +26,7 @@
                 <!-- Wifi Icon -->
             </div>
             <div class="header__column">
-              <span class="header__time">18:38</span>
+                <span class="header__time">18:38</span>
             </div>
             <div class="header__column">
                 <i class="fa fa-moon-o"></i>
@@ -39,12 +41,12 @@
             <div class="header__column">
                 <a href="index.html">
                     <i class="fa fa-times fa-lg"></i>
-                </a>    
+                </a>
             </div>
             <div class="header__column">
             </div>
             <div class="header__column">
-               <i class="fa fa-user fa-lg"></i>
+                <i class="fa fa-user fa-lg"></i>
             </div>
         </div>
 
@@ -52,30 +54,34 @@
     <!-- 카톡 페이지의 상단 -->
     <main class="profile">
         <header class="profile__header">
-            <img src="images/avatar.jpg" alt="">
-            <h3 class="profile__header-title">GwangGeun</h3>
+            <div class="profile__header-container">
+                <img src="images/avatar.jpg" alt="">
+                <h3 class="profile__header-title">GwangGeun</h3>
+            </div>
         </header>
         <!-- 내 프로필 사진 & 이름 -->
-        <input type="text" placeholder="jgg0328@gmail.com">
-        <!-- 내 이메일 -->
-        <div class="profile__actions">
-            <div class="profile__action">
-                <span class="profile__action-circle">
-                    <i class="fa fa-comment fa-2x"></i>
-                </span>
-                <span class="profile__action-title">My Chatroom</span>
+        <div class="profile__container">
+            <input type="text" placeholder="jgg0328@gmail.com">
+            <!-- 내 이메일 -->
+            <div class="profile__actions">
+                <div class="profile__action">
+                    <span class="profile__action-circle">
+                        <i class="fa fa-comment fa-lg"></i>
+                    </span>
+                    <span class="profile__action-title">My Chatroom</span>
+                </div>
+                <!-- 버튼 01 -->
+                <div class="profile__action">
+                    <span class="profile__action-circle">
+                        <i class="fa fa-pencil fa-lg"></i>
+                    </span>
+                    <span class="profile__action-title">Edit profile</span>
+                </div>
+                <!-- 버튼 02 -->
             </div>
-            <!-- 버튼 01 -->
-            <div class="profile__action">
-                <span class="profile__action-circle">
-                    <i class="fa fa-pencil fa-2x"></i>
-                </span>
-                <span class="profile__action-title">Edit profile</span>
-            </div>
-            <!-- 버튼 02 -->
         </div>
     </main>
-     <!--
+    <!--
         
         ** Main 화면 **
         
@@ -84,6 +90,9 @@
     2. 내 프로필 사진 & 이름 & 이메일 // 버튼 2개  
 
     -->
+    <div class="bigScreenText">
+        <span>Please make your screen smaller</span>
+    </div>
 </body>
 
 </html>
