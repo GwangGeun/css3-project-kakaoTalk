@@ -1,6 +1,6 @@
 # kakao-clone
 
-This is my personal "html & css" project.
+This is my personal "HTML5 & CSS3" project.
 
 Please click below link, if you wonder this project. 
 
