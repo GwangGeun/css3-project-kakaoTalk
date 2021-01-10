@@ -4,4 +4,4 @@ This is my personal "HTML5 & CSS3" project.
 
 Please click the below link, if you wonder this project. 
 
-https://gwanggeun.github.io/kakao-clone/
+https://gwanggeun.github.io/css3-project-kakaoTalk/
